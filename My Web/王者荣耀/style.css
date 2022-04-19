@@ -1,0 +1,887 @@
+
+.displaynone{
+    display: none;
+}
+
+@keyframes test {
+    from{
+bottom: 40%;
+        opacity: 0;
+    }
+    to{
+bottom: 8%;
+        opacity: 1;
+    }
+}
+@keyframes i3animation {
+    from{
+       top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes i4animation {
+    from{
+       left: -800px;
+        opacity: 0;
+    }
+    to{
+      margin-left: auto;
+        margin-right:auto;
+        left: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes d5animation {
+    from{
+       right: -800px;
+        opacity: 0;
+    }
+    to{
+        /*margin: 0 auto;*/
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        opacity: 1;
+    }
+}
+.bigdiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*!*overflow: auto;*!*/
+    /*top: -852px;*/
+    /*top: -1704px;*/
+    /*border: 20px solid red;*/
+    /*border: 1px solid red;*/
+}
+
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+
+
+.d1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+    /*top: 0;*/
+}
+.d2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: url("img/bg4.jpg") no-repeat center center;*/
+    /*  background-color: blue;*/
+    top: 100%;
+    overflow: hidden;
+}
+.d2 img{
+    width: 100%;
+    /*margin-top: -50px;*/
+
+}
+.v1{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.d1 .i1{
+    position: absolute;
+    width:35%;
+    bottom: 8%;
+    left: 32.5%;
+
+
+}
+.i1animation{
+    animation-name: test;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+.i2{
+    width: 23%;
+    position: absolute;
+}
+.d3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 200%;
+    overflow: hidden;
+}
+.d3 img{
+    width: 100%;
+    margin-top: -50px;
+}
+body{
+    transition:  all 0.3s;
+}
+.d4{
+    z-index: 2;
+    position: absolute;
+   height: 852px;
+    width: 1100px;
+    /*border:1px red solid;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+/******************/
+ .d4 .i3{
+     position: absolute;
+    width: 400px;
+     margin: 0 auto;
+     left: 0;
+    right: 0;
+     /*border: 1px solid red;*/
+top: 0;
+     animation: i3animation 0.4s 0.1s both;
+
+}
+ .d4 .i4{
+     position: absolute;
+top: 130px;
+     width: 950px;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     animation: i4animation  0.4s 0.1s both;
+ }
+ .d5{
+position: absolute;
+     width: 420px;
+     height: 407px;
+     /*border:1px red solid;*/
+    margin-left: auto;
+     margin-right: auto;
+     left: 0;
+     right: 0;
+     margin-top: 340px;
+overflow: hidden;
+     animation: d5animation  0.4s 0.1s both;
+ }
+ .u1{
+margin-top: 17px;
+
+     /*border:2px solid blue;*/
+     /*width: 420px;*/
+     /*height: 407px;*/
+     /*overflow: hidden;*/
+ }
+ .u1 li{
+     position: absolute;
+
+ }
+ .u1 li img{
+width: 210px;
+ }
+
+ .l1{
+
+    /*transition-duration: 300ms;*/
+    /*transform: perspective(1200px) translate3d(0, 0, 0px);*/
+
+}
+ .l2{
+    /*transition-duration:un*/
+    filter: brightness(70%);
+    transform: perspective(1200px) translate3d(-105px, 0, 0px);
+}
+ .l3{
+
+    /*transition-duration: 300ms;*/
+    transform: perspective(1200px) translate3d(105px, 0, 100px);
+    z-index: 2;
+}
+ .l4{
+    filter: brightness(70%);
+    /*transition-duration: 300ms;*/
+    transform: perspective(1200px) translate3d(315px, 0, 0px);
+}
+ @keyframes arrowleft {
+     from{
+        left: 600px;
+         opacity: 0;
+     }
+     to{
+         left: 250px;
+         opacity: 1;
+     }
+ }
+ .d4 .arrowleft{
+     left:250px;
+     top: 500px;
+     position: absolute;
+     width: 200px;
+     z-index: 5;
+     animation: arrowleft  0.4s 0.1s both;
+ }
+ .d4 .arrowleft:hover{
+     cursor: pointer;
+ }
+@keyframes arrowright {
+    from{
+        right: -150px;
+        opacity: 0;
+    }
+    to{
+       right: 250px;
+        opacity: 1;
+    }
+}
+  .d4 .arrowright{
+     position: absolute;
+     top: 500px;
+     width: 200px;
+      right: 250px;
+      z-index: 5;
+      animation: arrowright  0.4s 0.1s both;
+ }
+.d4 .arrowright:hover{
+    cursor: pointer;
+}
+
+
+@keyframes last {
+
+    from{
+        transform:perspective(1200px) translate3d(525px, 0, 0px) ;
+
+    }
+    to{
+        filter: brightness(70%);
+        transform:perspective(1200px) translate3d(315px, 0, 0px) ;
+    }
+}
+@keyframes first {
+
+    from{
+        transform:perspective(1200px) translate3d(315px, 0, 0px) ;
+
+    }
+    to{
+        filter: brightness(70%);
+        transform:perspective(1200px) translate3d(525px, 0, 0px) ;
+    }
+}
+.lfirst{
+    animation-name: last;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+
+
+}
+.llast{
+    animation-name: first;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+
+}
+@keyframes i5animation {
+    from{
+       top:950px;
+        opacity: 0;
+    }
+    to{
+        top: 750px;
+        opacity: 1;
+    }
+}
+.d4 .i5{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 300px;
+    top: 750px;
+    animation: i5animation 0.4s 0.1s both;
+
+}
+.i3vac{
+    opacity: 0;
+}
+.d6{
+    top: 0;
+   left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+
+@keyframes i6animation {
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to{
+       top: 30px;
+        opacity: 1;
+    }
+}
+.d6 .i6{
+    position: absolute;
+    width: 350px;
+left: 0 ;
+    right: 0;
+    top: 30px;
+    /*top: -200px;*/
+    margin: auto;
+    /*border: 1px solid red;*/
+    animation: i6animation 0.4s 0.1s both;
+}
+
+@keyframes i7animation {
+    from{
+        left: -800px;
+        opacity: 0;
+    }
+    to{
+        left: 0 ;
+        right: 0;
+        margin: auto;
+        opacity: 1;
+    }
+}
+.d6 .i7{
+    position: absolute;
+    width: 800px;
+    left: 0 ;
+    right: 0;
+    top: 160px;
+    margin: auto;
+    /*border: 1px solid red;*/
+    animation: i7animation 0.4s 0.1s both;
+}
+
+@keyframes i8animation {
+    from{
+       right: -1000px;
+        opacity: 0;
+    }
+    to{
+        left: 0 ;
+        right: 0;
+        margin: auto;
+        opacity: 1;
+    }
+}
+.d6 .i8{
+    position: absolute;
+    width: 900px;
+    left: 0 ;
+    right: 0;
+    top: 350px;
+    margin: auto;
+    /*border: 1px solid red;*/
+    animation: i8animation 0.4s 0.1s both;
+}
+.d7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+top: 300%;
+    overflow: hidden;
+}
+.d7 img{
+    width: 100%;;
+    margin-top: -50px;
+}
+.d8{
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+   left: 0;
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right:auto;
+    /*border: 1px solid red;*/
+}
+@keyframes i9animation {
+    from{
+       top: -200px;
+        opacity: 0;
+    }
+    to{
+       top: 50px;
+        opacity: 1;
+    }
+}
+.d8 .i9{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 700px;
+    animation: i9animation 0.4s 0.1s both;
+}
+@keyframes i10animation {
+    from{
+       left: -1000px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left:auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d8 .i10{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 800px;
+    animation: i10animation 0.4s 0.1s both;
+}
+
+@keyframes i11animation {
+    from{
+        right: -1000px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left:auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d8 .i11{
+    position: absolute;
+    top: 350px;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 600px;
+    animation: i11animation 0.4s 0.1s both;
+}
+
+@keyframes i12animation {
+    from{
+       top: 900px;
+        opacity: 0;
+    }
+    to{
+       top: 730px;
+        opacity: 1;
+    }
+}
+.d8 .i12{
+    position: absolute;
+    top: 730px;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 300px;
+    animation: i12animation 0.4s 0.1s both;
+}
+.d9{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 400%;
+    overflow: hidden;
+}
+.d9 img{
+    width: 100%;
+    margin-top: -50px;
+}
+.d10{
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    /*border: 1px solid red;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes i13animation {
+    from{
+        top: -70px;
+        opacity: 0;
+    }
+    to{
+        top: 70px;
+        opacity: 1;
+    }
+}
+
+.d10 .i13{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+    width: 700px;
+    animation: i13animation 0.4s 0.1s both;
+}
+
+@keyframes i14animation {
+    from{
+       left: -800px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d10 .i14{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 200px;
+    width: 600px;
+    animation: i14animation 0.4s 0.1s both;
+}
+@keyframes i15animation {
+    from{
+       right: -1400px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d10 .i15{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 330px;
+    width: 600px;
+    animation: i15animation 0.4s 0.1s both;
+}
+
+@keyframes i16animation {
+    from{
+      top: 800px;
+        opacity: 0;
+    }
+    to{
+        top: 700px;
+        opacity: 1;
+    }
+}
+.d10 .i16{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 700px;
+    width: 300px;
+    animation: i16animation 0.4s 0.1s both;
+}
+.d11{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 500%;
+    overflow: hidden;
+}
+.d11 img{
+    /*position: absolute;*/
+    width: 100%;
+  /*top: -50px;*/
+    margin-top: -50px;
+
+}
+.d12{
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 100%;
+    /*border: 1px solid red;*/
+
+}
+
+@keyframes i17animation {
+    from{
+        top: 0;
+        opacity: 0;
+    }
+    to{
+        top: 90px;
+        opacity: 1;
+    }
+}
+.d12 .i17{
+    position: absolute;
+    left: 0;
+   right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+top: 90px;
+animation: i17animation 0.4s 0.1s both;
+}
+
+@keyframes i18animation {
+    from{
+       left: -800px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d12 .i18{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    top:220px;
+    animation: i18animation 0.4s 0.1s both;
+}
+
+@keyframes i19animation {
+    from{
+       right: -1200px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d12 .i19{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    top:320px;
+    animation: i19animation 0.4s 0.1s both;
+}
+@keyframes i20animation {
+    from{
+       top: 750px;
+        opacity: 0;
+    }
+    to{
+       top: 700px;
+        opacity: 1;
+    }
+}
+.d12 .i20{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    top:700px;
+    animation: i20animation 0.4s 0.1s both;
+}
+.d13{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 600%;
+    overflow: hidden;
+}
+.d13 img{
+    width: 100%;
+    margin-top: -50px;
+}
+.d14{
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /*border:1px solid red;*/
+}
+
+@keyframes i21animation {
+    from{
+        top: 40px;
+        opacity: 0;
+    }
+    to{
+        top: 100px;
+        opacity: 1;
+    }
+}
+ .d14 .i21{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+     animation: i21animation 0.4s 0.1s both;
+}
+
+@keyframes i22animation {
+    from{
+        left: -800px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d14 .i22{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    animation: i22animation 0.4s 0.1s both;
+}
+@keyframes i23animation {
+    from{
+        right: -800px;
+        opacity: 0;
+    }
+    to{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+    }
+}
+.d14 .i23{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    animation: i23animation 0.4s 0.1s both;
+}
+
+/*********************/
+
+@keyframes u2animation {
+    from{
+        right: -200px;
+    }
+
+    to{
+        right: 10px;
+
+    }
+}
+
+
+.u2{
+    width: 155px;
+    height: 527px;
+    position: fixed;
+    top: 50%;
+    margin-top: -265px;
+    right: 10px;
+    z-index: 99;
+    /*border: 1px solid red;*/
+    animation: u2animation 0.5s 0.5s both;
+}
+.btn1{
+    background: url(img/nav.png) no-repeat -1px 0;
+    width: 155px;
+    height: 58px;
+}
+.btn2{
+    background: url(img/nav.png) no-repeat -239px -58px;
+    width: 155px;
+    height: 80px;
+
+}
+.btn3{
+    background: url(img/nav.png) no-repeat -239px -137px;
+    width: 155px;
+    height: 85px;
+}
+.btn4{
+    background: url(img/nav.png) no-repeat -239px -221px;
+    width: 155px;
+    height: 85px;
+}
+
+.btn5{
+    background: url(img/nav.png) no-repeat -239px -305px;
+    width: 155px;
+    height: 83px;
+}
+.btn6{
+    background: url(img/nav.png) no-repeat -239px -387px;
+    width: 155px;
+    height: 81px;
+}
+.btn7{
+    background: url(img/nav.png) no-repeat -239px -467px;
+    width: 155px;
+    height: 61px;
+}
+.u2 li:hover{
+    cursor: pointer;
+}

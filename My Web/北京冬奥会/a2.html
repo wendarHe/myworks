@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京-北京冬奥会</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        ​ body {
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .header {
+            background-color: rgb(14, 13, 13);
+            height: 30px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+        }
+        
+        .header-right {
+            font-size: 5px;
+            width: 500px;
+            height: 10px;
+            position: absolute;
+            top: 0px;
+            right: -30px;
+            align-self: center;
+            text-align: center;
+            text-decoration: beige;
+        }
+        
+        .topnav {
+            border-width: 1px 1px;
+            border-style: solid solid;
+            border-color: rgb(197, 194, 194) rgb(197, 194, 194);
+            overflow: hidden;
+            background-color: white;
+            height: 100px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 30px;
+        }
+        
+        .topnav-left {
+            overflow: hidden;
+            position: absolute;
+            left: 100px;
+            top: 35px;
+        }
+        
+        .topnav-center {
+            font-size: 15px;
+            width: 1000px;
+            height: 50px;
+            position: relative;
+            top: 15px;
+            left: 0px;
+            align-self: center;
+            text-align: left;
+        }
+        
+        .topnav-right {
+            font-size: 15px;
+            width: 500px;
+            height: 50px;
+            position: absolute;
+            top: 15px;
+            right: 0px;
+            align-self: center;
+            text-align: center;
+        }
+        
+        .body {
+            overflow: hidden;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 130px;
+        }
+        
+        .title1 {
+            overflow: hidden;
+            position: absolute;
+            left: 100px;
+            right: 0px;
+            top: 800px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0px;
+        }
+        
+        .short-line1 {
+            overflow: hidden;
+            position: absolute;
+            left: 100px;
+            right: 0px;
+            top: 880px;
+            margin-top: 5px;
+        }
+        
+        .body-center {
+            overflow: hidden;
+            position: relative;
+            top: 1000px;
+        }
+        
+        .body-bottom {
+            overflow: hidden;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 2400px;
+        }
+        
+        .title2 {
+            overflow: hidden;
+            position: absolute;
+            left: 100px;
+            right: 0px;
+            top: 3080px;
+        }
+        
+        .short-line2 {
+            overflow: hidden;
+            position: absolute;
+            left: 100px;
+            right: 0px;
+            top: 3150px;
+            margin-top: 5px;
+        }
+        
+        .cell-center {
+            overflow: hidden;
+            position: relative;
+            margin-top: 2000px;
+        }
+        
+        .textarea1 {
+            overflow: hidden;
+            position: relative;
+            margin-left: -230px;
+            margin-top: 80px;
+            border: 1px solid #727171;
+            padding: 10px 40px;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .textarea2 {
+            overflow: hidden;
+            position: relative;
+            margin-left: 220px;
+            margin-top: -48px;
+            border: 1px solid #727171;
+            padding: 10px 40px;
+            width: 200px;
+            height: 50px;
+        }
+        
+        .footer {
+            background-color: rgb(238, 235, 235);
+            height: 700px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 4080px;
+        }
+        
+        .last-footer {
+            background-color: rgb(209, 207, 207);
+            height: 80px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 4780px;
+        }
+        
+        .one {
+            font-size: 20px;
+            width: 1500px;
+            position: relative;
+            top: 30px;
+            left: 0px;
+            align-self: center;
+            border-bottom: 1px solid rgb(112, 110, 110);
+        }
+        
+        .two {
+            font-size: 20px;
+            width: 1500px;
+            height: 200px;
+            position: relative;
+            top: 60px;
+            left: 0px;
+            align-self: center;
+            text-align: center;
+            border-bottom: 1px solid rgb(112, 110, 110);
+        }
+        
+        .three {
+            font-size: 15px;
+            width: 1000px;
+            height: 100px;
+            position: relative;
+            top: 120px;
+            left: 0px;
+            align-self: center;
+            text-align: left;
+        }
+        
+        .four {
+            font-size: 15px;
+            width: 1000px;
+            height: 50px;
+            position: relative;
+            top: 10px;
+            left: 0px;
+            align-self: center;
+            text-align: left;
+        }
+        
+        #mytest td {
+            background-color: rgb(253, 251, 249);
+        }
+        
+        .i.i1 img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    screen.width screen.height if (window.screen.width=='600') document.write ('
+
+    <body style="zoom: 75%">'); else if (window.screen.width=='800') document.write ('
+
+        <body style="zoom: 75%">');
+            <div class="header">
+                <div class="header-right">
+                    <table border="0" align="center" cellpadding="0">
+                        <tr>
+                            <td><img src="image/13.png"></td>
+                            <td>
+                                <font color="white">测试网站</font>
+                            </td>
+                            <td><img src="image/14.png"></td>
+                            <td><img src="image/15.png"></td>
+                            <td>
+                                <font color="white">官方独家供应商</font>
+                            </td>
+                            <td><img src="image/14.png"></td>
+                            <td><img src="image/16.png"></td>
+                            <td>
+                                <font color="white">登录</font>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="topnav" align="center">
+                <div class="topnav-left" align="left"><img src="image/logo2.jpg" alt="商标" width="133px" height="30px"></div>
+                <div class="topnav-center">
+                    <table border="0" align="center" cellpadding="25">
+                        <tr>
+                            <td>焦点新闻</td>
+                            <td>项目描述</td>
+                            <td>东残奥历史</td>
+                            <td>东残奥会官方合作伙伴</td>
+                            <td>东残奥官方赞助商</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="topnav-right">
+                    <table border="0" align="center" cellpadding="20">
+                        <tr>
+
+                            <td><img src="image/19.png"> &nbsp 在线搜索 &nbsp <img src="image/21.png"></td>
+                            <td><img src="image/20.png"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="body" align="center">
+                <img src="image/30.png" width="1920" height="646"></div>
+            <div class="title1 ">
+                <h1 align="center">推荐信息</h1>
+            </div>
+            <div class="short-line1 " align="center">
+                <img src=" image/line.png ">
+            </div>
+            <div class="body-center" align="center">
+                <table border=" 0 " cellpadding="20">
+                    <tr>
+                        <td colspan="2 ">
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:20px; top:300px; color:rgb(245, 240, 240); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>吉祥物
+                                                </p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>冰墩墩|雪容融
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p1>盛情与绽放</p1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div class="i1" style="overflow: hidden;">
+                                <img src="image/31.jpg" style="transition: all 0.5s;"> </img>
+                            </div>
+
+                        </td>
+
+                        <td align="right">
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:20px; top:300px; color:rgb(255, 255, 255); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>志愿者
+                                                </p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>高校学子
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p1>青春与活力并存</p1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <img src="image/111.jpg" height="446" width="460"> </img>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:20px; top:300px; color:rgb(255, 255, 255); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>
+                                                    产品
+                                                </p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>东残奥会项目
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p1>万象新生</p1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <img src="image/112.jpg" height="446" width="446"> </img>
+                            </div>
+                        </td>
+                        <td colspan="2 ">
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:20px; top:300px; color:rgb(255, 255, 255); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>国家
+                                                </p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>国家交流平台
+                                                </h2>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <img src="image/32.jpg"> </img>
+
+                            </div>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:5px; top:150px; color:rgb(255, 254, 254); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>合作生态</p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>
+                                                    “一平台双驱动”， 共建昇腾东奥新生态
+                                                </h2>
+
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <img src="image/36.jpg" height="271" width="446"> </img>
+                            </div>
+                        </td>
+
+                        <td align="center">
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:5px; top:150px; color:rgb(255, 255, 255); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>&nbsp&nbsp&nbsp实施方案</p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr height="10px">
+                                            <td>
+                                                <h2>
+                                                    &nbsp&nbsp&nbsp海量高性能数据分析，让数据更直观
+                                                </h2>
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <img src="image/35.png" height="271" width="470"></img>
+                            </div>
+                        </td>
+                        <td align="right">
+                            <div style="position:relative ">
+                                <div style="position:absolute; left:5px; top:100px; color:rgb(255, 255, 255); font-weight:bold ">
+                                    <table border="0" cellpadding="0">
+                                        <tr>
+                                            <td>
+                                                <p1>趋势洞察</p1>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>十大趋势塑造下一代网络</h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p1>
+                                                    从2G/NGN，到3G/4G/Multi-Play，再到云时代的5G/SDN/NFV，还将出现……
+                                                </p1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <img src="image/34.png" height="271" width="470">
+                                </img>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="body-bottom" align="center">
+                <img src="image/37.jpg" width="1920" height="646">
+            </div>
+            <div class="title2 ">
+                <h1 align="center">新闻与活动</h1>
+            </div>
+            <div class="short-line2 " align="center">
+                <img src=" image/line.png ">
+            </div>
+            <div class="cell-center" align="center">
+                <table border=" 0" cellpadding="15" id="mytest">
+                    <tr>
+                        <td>
+                            <img src="image/40.png " height="250 " width="446 "></td>
+                        <td> <img src="image/41.jpg " height="250 " width="446 "></td>
+                        <td rowspan="2">
+                            <div>
+                                <strong> 新闻</strong>
+                            </div>
+                            <div style="overflow-y:scroll;" height="250 " width="446 ">
+                                <div>
+                                    <a href="#">
+                                        <h3>【冬奥竞赛项目知识介绍片】速度滑冰</h3>
+                                        <div>2021年09月29日</div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>冬奥冠军张虹将领滑全国大众速度滑冰马拉松系列赛</h3>
+                                        <div>2021年09月29日</div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>短道速滑和速度滑冰体能训练营开营</h3>
+                                        <div>2021年09月29日</div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>2018年平昌冬奥会 速度滑冰男子5000米克莱默获冠军</h3>
+                                        <div>2021年09月29日</div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>2010年温哥华冬奥会 速度滑冰女子500米王北星摘铜</h3>
+                                        <div>2021年09月29日</div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="250 " width="446 ">
+                            <h1>2021全球冬奥会会议论坛</h1>
+                            <table border="0">
+                                <tr>
+                                    <td>
+                                        <img src="image/22.png">
+                                    </td>
+                                    <td>阿联酋，迪拜</td>
+                                    <td><img src="image/23.png"></td>
+                                    <td>2021年10月13-14日</td>
+                                </tr>
+                            </table>
+                            <table border="0">
+                                <tr>
+                                    <td>
+
+                                        冬奥知识小课堂又开课了！第五讲“奥林匹克标志和残奥标志演变史”来袭，在前三讲中，我们回顾了奥林匹克的历史，学习了奥林匹克的理念，领略了奥运……
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td height="250 " width="446 ">
+                            <h1>2021全球冬奥会会议高峰论坛</h1>
+                            <table border="0">
+                                <tr>
+                                    <td>
+                                        <img src="image/22.png">
+                                    </td>
+                                    <td>阿联酋，迪拜</td>
+                                    <td><img src="image/23.png"></td>
+                                    <td>2021年10月19-20日</td>
+                                </tr>
+                            </table>
+                            <table border="0">
+                                <tr>
+                                    <td>
+
+
+                                        近日，为迎接北京冬残奥会倒计时100天，分享喜盼冬残奥会的热烈心情，国家体育馆......把最佳观赛坐席留给残障人士！探访国家冬季两项中心
+                                </tr>
+                            </table>
+                            </td>
+                    </tr>
+                </table>
+            </div>
+            <div align="center">
+                <div class="textarea1">
+                    <p>
+                        <strong>更多活动</strong></p>
+                </div>
+                <div class="textarea2">
+                    <p>
+                        <strong>更多新闻</strong></p>
+                </div>
+            </div>
+            <div class="footer">
+                <table border="0" class="one" align="center">
+                    <tr>
+                        <td>首页</td>
+                        <td align="right"><img src="image/17.png"></td>
+                    </tr>
+                </table>
+                <table border="0" class=" two " align="center" cellpadding="10">
+                    <tr>
+                        <th>关于赛事</th>
+                        <th>新闻与活动</th>
+                        <th>发现</th>
+                        <th>冬奥会吉祥物</th>
+                        <th>技术支持</th>
+                    </tr>
+                    <tr>
+
+                        <td>赛事简介</td>
+                        <td>新闻</td>
+                        <td>技术观察</td>
+                        <td>个人及社会理念</td>
+                        <td>技术支持</td>
+                    </tr>
+                    <tr>
+
+                        <td>可持续发展</td>
+                        <td>展会活动</td>
+                        <td>出版物</td>
+                        <td>数据输入</td>
+                        <td>云技术支持</td>
+                    </tr>
+                    <tr>
+
+                        <td>信任中心</td>
+                        <td>媒体图库</td>
+                        <td></td>
+                        <td>运营网络</td>
+                        <td>技术支持</td>
+                    </tr>
+                    <tr>
+
+                        <td>管理信息</td>
+                        <td></td>
+                        <td></td>
+                        <td>云服务</td>
+                        <td>技术支持</td>
+                    </tr>
+                    <tr>
+
+                        <td>招贤纳士</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>赛事安全通告</td>
+                    </tr>
+                    <tr>
+
+                        <td>供应商</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+
+                        <td>查看更多></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table border="0" class=" three " align="center">
+                    <tr>
+                        <td>赛事商城</td>
+                        <td>赛事云</td>
+                        <td>比赛智能光伏</td>
+                        <td>比赛定义社区</td>
+                        <td>冬奥会心声社区</td>
+                        <td>&nbsp &nbsp &nbsp </td>
+                        <td><img src="image/18.png"></td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class=" last-footer ">
+                <table border="0" class=" four " align="center">
+                    <tr>
+                        <td>冬奥会||东残奥会</td>
+                        <td>组织委员会</td>
+                        <td>|</td>
+                        <td>联系我们</td>
+                        <td>法律声明</td>
+                        <td>隐私保护</td>
+                        <td>姓名查询</td>
+
+
+                    </tr>
+                </table>
+            </div>
+        </body>
+
+</html>

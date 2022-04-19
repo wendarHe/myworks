@@ -1,0 +1,152 @@
+.container9{
+    width: 100%;
+    height:298px ;
+    /*border: 1px solid red;*/
+    /*background: url("footer/bg8.jpg") center center no-repeat;*/
+    position: relative;
+    z-index: 2;
+
+
+}
+.d34{
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+.ice{
+    position: absolute;
+    /*border: 5px solid red;*/
+    width: 250px;
+    height: 293px;
+    /*top: 0;*/
+/*top: -250px;*/
+    top: -150px;
+    transition: all 0.4s;
+/*z-index: -90;*/
+
+}
+.ice .img17{
+    width: 250px;
+    z-index: -1;
+    cursor: pointer;
+}
+ .img19{
+    width: 310px;
+    position: absolute;
+    top: -250px;
+    left: 60px;
+    /*display: none;*/
+     opacity: 0;
+z-index: -1;
+
+
+}
+.ice .img20{
+    position: absolute;
+    width: 200px;
+    left: 116px;
+    top: -220px;
+    /*opacity: 0;*/
+    /*display: none;*/
+    opacity: 0;
+
+}
+.snow{
+    position: absolute;
+    /*border: 1px solid red;*/
+    right: 0;
+    width: 190px;
+    height: 300px;
+    /*overflow: hidden;*/
+    top: -150px;
+    /*top: -260px;*/
+    transition: all 0.4s;
+}
+.snow:hover{
+    top: -260px;
+}
+.snow .img18{
+    width: 190px;
+    cursor: pointer;
+}
+@keyframes iceAni {
+    from{
+        transform: scale(0.95);
+        opacity: 1;
+        display: block;
+
+    }
+
+    30%{
+        transform: scale(1.15);
+    }
+    /*60%{*/
+    /*    transform: scale(1.05);*/
+    /*}*/
+    to{
+        transform: scale(1);
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+.ice:hover{
+    top: -250px;
+}
+
+ .container9 .ice:hover .img19{
+    animation: iceAni 0.4s 0.5s forwards;
+}
+.container9 .ice:hover .img20{
+    animation: iceAni 0.4s 0.5s forwards;
+}
+/*.iceAnimation{*/
+/*    animation: iceAni  10s linear infinite;*/
+/*}*/
+.d35{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background: url("footer/bg8.jpg") center center no-repeat;
+    /*overflow: hidden;*/
+    /*z-index: -2;*/
+
+
+}
+.d36{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    background: url("footer/bg1.png") center center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    /*top: 0;*/
+    /*left: 0;*/
+/*border: 1px solid red;*/
+
+
+}
+.img22{
+    position: absolute;
+    top: -220px;
+    left: -110px;
+    width: 260px;
+    opacity: 0;
+}
+.img23{
+    position: absolute;
+    width: 210px;
+    top: -200px;
+    left: -85px;
+    opacity: 0;
+}
+.container9 .snow:hover .img22{
+    animation: iceAni 0.4s 0.5s forwards;
+}
+.container9 .snow:hover .img23{
+    animation: iceAni 0.4s 0.5s forwards;
+}
